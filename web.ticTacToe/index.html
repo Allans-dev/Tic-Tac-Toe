@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="javascript.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<title> Tic Tac Toe </title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="display">
+      <span class="chooseText"> Choose a character <br> <span class="initialX" onclick="displayX()"> X </span> or
+      <span class="initialO" onclick="displayO()"> O </span></span>
+      <div id="gameBoard">
+        <div class="row">
+          <div class="col-md-4" id="topLeft" onclick="XorO(this.id)">
+          </div><!--topLeft-->
+          <div class="col-md-4" id="topMid" onclick="XorO(this.id)">
+          </div><!--topMid-->
+          <div class="col-md-4" id="topRight" onclick="XorO(this.id)">
+          </div><!--topRight-->
+        </div><!--row1-->
+        <div class="row">
+          <div class="col-md-4" id="midLeft" onclick="XorO(this.id)">
+          </div><!--midLeft-->
+          <div class="col-md-4" id="midMid" onclick="XorO(this.id)">
+          </div><!--midMid-->
+          <div class="col-md-4" id="midRight" onclick="XorO(this.id)">
+          </div><!--midRight-->
+        </div><!--row2-->
+        <div class="row">
+          <div class="col-md-4" id="botLeft" onclick="XorO(this.id)">
+          </div><!--botLeft-->
+          <div class="col-md-4" id="botMid" onclick="XorO(this.id)">
+          </div><!--botMid-->
+          <div class="col-md-4" id="botRight" onclick="XorO(this.id)">
+          </div><!--botRight-->
+        </div><!--row3-->
+      </div><!--gameBoard-->
+    </div><!--display-->
+    <div id="postGame">
+      test
+    </div>
+    <button onclick="reset()"> RESET </button>
+  </div><!--container-->
+</body>
+</html>
